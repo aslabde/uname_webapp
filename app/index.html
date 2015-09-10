@@ -34,6 +34,23 @@
 
       <div ng-view=""></div>
 
+      <!-- place holder para mi código -->
+    <table class="table table-bordered table-hover">
+      <tr>
+        <th>Nombre</th>
+        <th>Propietario</th>
+        <th>Equipo</th>
+        <th>Precio</th>
+      </tr>
+      <tr ng-repeat="player in data.players">
+        <td>{{player.playerName}}</td>
+        <td>{{player.ownerName}}</td>
+        <td>{{player.teamName}}</td>
+        <td>{{player.sellPrize}}</td>
+      </tr>
+    </table> 
+    <!-- Fin de mi código  -->
+
       <div class="footer">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
       </div>
@@ -76,6 +93,10 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <script src="scripts/services/market.js"></script>
+        <script ser="scripts/controllers/controller1.js"></script>
+
+        </script>
         <!-- endbuild -->
 </body>
 </html>
